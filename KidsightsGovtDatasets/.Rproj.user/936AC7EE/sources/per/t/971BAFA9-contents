@@ -3,7 +3,6 @@ get_cahmi_xwalk<-function(cahmi_2016_2020){
   require(tidyverse)
   require(sjlabelled)
 
-  ###### Create the Nebraska analyzable data set data set #####
 
   afemale_xwalk =
     list(
@@ -29,11 +28,7 @@ get_cahmi_xwalk<-function(cahmi_2016_2020){
     )
 
 
-  ###
-  # Insert crosswalk for cashass, mealfree, and govhealthc HERE!
-  ###
-
-  govhealthc_rc_xwalk =
+ govhealthc_rc_xwalk =
     list(
       xwalk =
         data.frame(
@@ -269,7 +264,8 @@ get_cahmi_xwalk<-function(cahmi_2016_2020){
     acementalill_rc = acementalill_rc_xwalk,
     aceaddict_rc = aceaddict_rc_xwalk,
     aceracism_rc = aceracism_rc_xwalk,
-    race4_char = race4_char_xwalk
+    race4_char = race4_char_xwalk,
+    care10hrs_rc = care10hr_rc_xwalk
   )
 
 return(xwalk_cahmi)

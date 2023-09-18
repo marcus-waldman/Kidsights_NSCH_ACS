@@ -7,6 +7,7 @@ recode_cahmi<-function(...){
   require(sjlabelled)
   require(readxl)
 
+
   # Load in, combine, and recode for consistency across the NSCH datasets.
   cahmi_2016_2020 = combine_cahmi_datasets()
 
@@ -17,11 +18,13 @@ recode_cahmi<-function(...){
     dplyr::mutate(year = year %>% zap_attributes() %>% as.numeric() %>% haven::labelled(label = "Survey Year")) %>%
     dplyr::mutate(fipsst = fipsst %>% zap_attributes() %>% as.numeric() %>% haven::labelled(label = "State (FIPS code)")) %>%
     dplyr::mutate(uid = paste(study,year,fipsst,hhid,sep="-") %>% haven::labelled(label = "Unique identifier")) %>%
-    dplyr::mutate(wgt = fwc/2 %>% haven::labelled(label = "Person weight")) %>%
+    dplyr::mutate(wgt2 = fwc/2 %>% zap_attributes()) %>%
+      dplyr::mutate(wgt = haven::labelled(wgt2,label = "Person's weight")) %>%
+      dplyr::mutate(-wgt2) %>%
     dplyr::mutate(hhid = hhid %>% as.character() %>% haven::labelled(label = "Household ID")) %>%
     dplyr::mutate(famid = NA %>% as.character() %>% haven::labelled(label = "Family identifier") ) %>%
     dplyr::mutate(puma = NA %>% as.character() %>% haven::labelled(label = "Public Use Micro Area")) %>%
-    dplyr::mutate(rural = rural %>% as.numeric()) %>%
+    dplyr::mutate(rural = rural %>% as.numeric() %>% haven::labelled(label = "Located in rural locality")) %>%
     dplyr::mutate(pctmetro = NA %>% as.numeric() %>% haven::labelled(label = "Percentage of PUMA Population in Metropolitan Area")) %>%
     dplyr::mutate(fwc = fwc %>%
              as.numeric() %>% haven::labelled(label = "Child weight in NSCH population (i.e., weighted quintile)")) %>%
@@ -209,9 +212,13 @@ recode_cahmi<-function(...){
            cpi99 = get_cpi99(year) %>% as.numeric() %>% haven::labelled(label = "CPI-U adjustment factor to 1999 dollars"),
            famcount = famcount)
 
-    nsch_ne = nsch_ne %>% dplyr::select(dplyr::all_of(vars_df$var_names))
 
-  return(nsch_ne)
+    list(
+      data = nsch_ne %>% dplyr::select(dplyr::all_of(vars_df$var_names)) %>% tidyr::as_tibble(),
+      dictionary = create_data_dictionary(nsch_ne) %>% dplyr::filter(variable_name %in% vars_df$var_names)
+    ) %>%
+    return()
+
 
 }
 

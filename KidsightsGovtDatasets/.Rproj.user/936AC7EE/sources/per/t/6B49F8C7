@@ -1,0 +1,26 @@
+{
+    "id": "6B49F8C7",
+    "path": "C:/Users/marcu/Dropbox/GitKraken/white-rhino/repositories/Kidsights_NSCH_ACS/KidsightsGovtDatasets/R/extract_vars_cahmi.R",
+    "project_path": "R/extract_vars_cahmi.R",
+    "type": "r_source",
+    "hash": "3968516226",
+    "contents": "",
+    "dirty": false,
+    "created": 1695068241681.0,
+    "source_on_save": false,
+    "relative_order": 10,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "29,35",
+        "scrollLine": "6"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1695074216,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1695074216895,
+    "read_only": false,
+    "read_only_alternatives": []
+}

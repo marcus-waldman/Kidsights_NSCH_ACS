@@ -12,13 +12,15 @@ Maintainer: Marcus Waldman <marcus.waldman@unmc.edu>
 Depends: R (>= 3.1.0),
 	 haven,
 	 plyr,
+ 	 purrr,
 	 readxl,
-	 sjlabelled, 
-	 tidyverse, 
-         usethis
+	 sjlabelled,
+ 	 tibble, 
+	 tidyverse
 Description: Load, wrangle, and recode public use NSCH and ACS 
-	datasets to promote and evaluate generalizability of 
-	conclusions from Kidsight.
+	datasets. Wrangled datasets are then used to inform
+	study design before data collection and to promote and 
+	to evaluate the generalizability of conclusions post hoc.
 License: MIT
 Encoding: UTF-8
 LazyData: true

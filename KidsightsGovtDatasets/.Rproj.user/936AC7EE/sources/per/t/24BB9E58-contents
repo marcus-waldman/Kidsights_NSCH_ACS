@@ -16,6 +16,9 @@ combine_cahmi_datasets<-function(...){
 
 
   ########  a1_grade: Caregiver 1 Educational Attainment #############
+  #2021
+
+
   # 2019-2020
   tmp_1920 = extract_vars_cahmi(source = "2019-2020", cahmi_2019_2020, cahmi_2017_2018, cahmi_2016, vars = "a1_grade")
 
@@ -102,7 +105,7 @@ combine_cahmi_datasets<-function(...){
   # 2016:
   tmp_16 = extract_vars_cahmi(source = "2016", cahmi_2019_2020, cahmi_2017_2018, cahmi_2016, vars = "FPL")
   tmp_16 = tmp_16 %>% mutate(fpl_i1 = fpl) %>%
-    dplyr::select(-fpl)
+    dplyr::select(-all_of("fpl"))
 
 
   identical(names(tmp_1920),names(tmp_1718))
@@ -141,11 +144,12 @@ combine_cahmi_datasets<-function(...){
 
   tmp_16_20 = tmp_16_20 %>%
     mutate(
-      wic = zap_attributes(wic),
-      wic = haven::labelled(wic,
+      wic2 = zap_attributes(wic),
+      wic = haven::labelled(wic2,
                             labels = c(Yes=1, No=2),
                             label = "Received benefits from the WIC Program at any time during the past 12 months")
-    )
+    ) %>%
+    dplyr::mutate(-wic2)
 
   nrow(cahmi_2016_2020)==nrow(tmp_16_20)
   nrow(cahmi_2016_2020)
@@ -179,11 +183,12 @@ combine_cahmi_datasets<-function(...){
   tmp_16_20 = tmp_16_20 %>% mutate(cashass = ifelse(cashass==99,NA,cashass))
 
   tmp_16_20 = tmp_16_20 %>%
-    mutate(cashass = zap_attributes(cashass),
-           cashass = haven::labelled(cashass,
+    mutate(cashass2 = zap_attributes(cashass),
+           cashass = haven::labelled(cashass2,
                                      labels = c(Yes=1,No = 2),
                                      label = "Received cash assistance from government at any time during the past 12 months")
-    )
+    ) %>%
+    dplyr::mutate(-cashass2)
 
   nrow(cahmi_2016_2020)==nrow(tmp_16_20)
   nrow(cahmi_2016_2020)
@@ -254,11 +259,12 @@ combine_cahmi_datasets<-function(...){
 
 
   tmp_16_20 = tmp_16_20 %>%
-    mutate(mealfree = zap_attributes(mealfree),
+    mutate(mealfree2 = zap_attributes(mealfree),
            mealfree = haven::labelled(mealfree,
                                       labels = c(Yes=1,No = 2),
                                       label = "Received free or reduced-cost breakfasts or lunches at school")
-    )
+    ) %>%
+    dplyr::select(-mealfree2)
 
 
   nrow(cahmi_2016_2020)==nrow(tmp_16_20)
@@ -294,11 +300,12 @@ combine_cahmi_datasets<-function(...){
 
 
   tmp_16_20 = tmp_16_20 %>%
-    mutate(govhealthc = zap_attributes(govhealthc),
-           govhealthc = haven::labelled(govhealthc,
+    mutate(govhealthc2 = zap_attributes(govhealthc),
+           govhealthc = haven::labelled(govhealthc2,
                                         labels = c(Yes=1,No = 2),
                                         label = "Government assisted health care")
-    )
+    ) %>%
+    dplyr::select(-govhealthc2)
 
 
   nrow(cahmi_2016_2020)==nrow(tmp_16_20)

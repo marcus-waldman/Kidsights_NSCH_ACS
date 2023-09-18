@@ -1,0 +1,20 @@
+Package: KidsightsGovtDatasets
+Type: Package
+Title: Kidsights Government Datasets.
+Version: 0.1.0
+Authors@R: c(person("Marcus", "Waldman", role = c("aut", "cre"),
+                     email = "marcus.waldman@unmc.edu"),
+              person("Mingying", "Zheng", role = c("aut"), 
+		     email = "mingying-zheng@uiowa.edu"))
+Author: Marcus Waldman [aut, cre], 
+        Mingying Zheng [aut]
+Maintainer: Marcus Waldman <marcus.waldman@unmc.edu>
+Depends: R (>= 3.1.0), haven, plyr, readxl, sjlabelled, tidyverse,
+        usethis
+Description: Load, wrangle, and recode public use NSCH and ACS 
+	datasets to promote and evaluate generalizability of 
+	conclusions from Kidsight.
+License: MIT
+Encoding: UTF-8
+NeedsCompilation: no
+Packaged: 2023-09-18 16:38:46 UTC; marcu

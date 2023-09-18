@@ -1,0 +1,324 @@
+* using log directory 'C:/Users/marcu/Dropbox/GitKraken/white-rhino/repositories/Kidsights_NSCH_ACS/KidsightsGovtDatasets.Rcheck'
+* using R version 4.3.1 (2023-06-16 ucrt)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* R was compiled by
+    gcc.exe (GCC) 12.2.0
+    GNU Fortran (GCC) 12.2.0
+* running under: Windows 11 x64 (build 22621)
+* using session charset: UTF-8
+* using options '--no-manual --as-cran'
+* checking for file 'KidsightsGovtDatasets/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'KidsightsGovtDatasets' version '0.1.0'
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... NOTE
+Depends: includes the non-default packages:
+  'haven', 'plyr', 'readxl', 'sjlabelled', 'tidyverse', 'usethis'
+Adding so many packages to the search path is excessive and importing
+selectively is preferable.
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking serialization versions ... OK
+* checking whether package 'KidsightsGovtDatasets' can be installed ... [110s] OK
+* checking installed package size ... NOTE
+  installed size is 26.4Mb
+  sub-directories of 1Mb or more:
+    R  26.3Mb
+* checking package directory ... OK
+* checking for future file timestamps ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Malformed Title field: should not end in a period.
+License components which are templates and need '+ file LICENSE':
+  MIT
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... WARNING
+'::' or ':::' import not declared from: 'dplyr'
+'library' or 'require' calls to packages already attached by Depends:
+  'haven' 'plyr' 'readxl' 'sjlabelled' 'tidyverse'
+  Please remove these calls from your code.
+Packages in Depends field not imported from:
+  'haven' 'plyr' 'readxl' 'sjlabelled' 'tidyverse' 'usethis'
+  These packages need to be imported from (in the NAMESPACE file)
+  for when this namespace is loaded but not attached.
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... [14s] NOTE
+combine_cahmi_datasets: no visible global function definition for '%>%'
+combine_cahmi_datasets: no visible global function definition for
+  'mutate'
+combine_cahmi_datasets: no visible binding for global variable
+  'a1_grade'
+combine_cahmi_datasets: no visible global function definition for
+  'bind_rows'
+combine_cahmi_datasets: no visible global function definition for
+  'left_join'
+combine_cahmi_datasets: no visible binding for global variable
+  'a2_grade'
+combine_cahmi_datasets: no visible binding for global variable
+  'AdultEduc_1920'
+combine_cahmi_datasets: no visible binding for global variable
+  'adulteduc_1718'
+combine_cahmi_datasets: no visible binding for global variable
+  'adulteduc_16'
+combine_cahmi_datasets: no visible binding for global variable 'fpl'
+combine_cahmi_datasets: no visible binding for global variable
+  'WIC_1920'
+combine_cahmi_datasets: no visible binding for global variable
+  'wic_1718'
+combine_cahmi_datasets: no visible binding for global variable 'wic_16'
+combine_cahmi_datasets: no visible binding for global variable 'wic'
+combine_cahmi_datasets: no visible binding for global variable
+  'CashAss_1920'
+combine_cahmi_datasets: no visible binding for global variable
+  'cashass_1718'
+combine_cahmi_datasets: no visible binding for global variable
+  'cashass_16'
+combine_cahmi_datasets: no visible binding for global variable
+  'cashass'
+combine_cahmi_datasets: no visible binding for global variable
+  'FoodStamp_1920'
+combine_cahmi_datasets: no visible binding for global variable
+  'foodstamp_1718'
+combine_cahmi_datasets: no visible binding for global variable
+  'foodstamp_16'
+combine_cahmi_datasets: no visible binding for global variable
+  'foodstamp'
+combine_cahmi_datasets: no visible binding for global variable
+  'MealFree_1920'
+combine_cahmi_datasets: no visible binding for global variable
+  'mealfree_1718'
+combine_cahmi_datasets: no visible binding for global variable
+  'mealfree_16'
+combine_cahmi_datasets: no visible binding for global variable
+  'mealfree'
+combine_cahmi_datasets: no visible binding for global variable 'k12q12'
+combine_cahmi_datasets: no visible binding for global variable
+  'govhealthc'
+combine_cahmi_datasets: no visible binding for global variable
+  'foodcash'
+combine_cahmi_datasets: no visible binding for global variable
+  'a1_relation'
+combine_cahmi_datasets: no visible binding for global variable
+  'a2_relation'
+combine_cahmi_datasets: no visible binding for global variable
+  'sex_1920'
+combine_cahmi_datasets: no visible binding for global variable
+  'sex_1718'
+combine_cahmi_datasets: no visible binding for global variable 'sex_16'
+combine_cahmi_datasets: no visible binding for global variable 'sex'
+combine_cahmi_datasets: no visible binding for global variable
+  'sc_hispanic_r'
+combine_cahmi_datasets: no visible binding for global variable
+  'race4_1920'
+combine_cahmi_datasets: no visible binding for global variable
+  'race4_1718'
+combine_cahmi_datasets: no visible binding for global variable
+  'race4_16'
+combine_cahmi_datasets: no visible binding for global variable 'race4'
+combine_cahmi_datasets: no visible binding for global variable
+  'sc_k2q10'
+combine_cahmi_datasets: no visible binding for global variable
+  'scrxmeds'
+combine_cahmi_datasets: no visible binding for global variable
+  'sc_k2q13'
+combine_cahmi_datasets: no visible binding for global variable
+  'scserve'
+combine_cahmi_datasets: no visible binding for global variable
+  'sc_k2q16'
+combine_cahmi_datasets: no visible binding for global variable 'scfunc'
+combine_cahmi_datasets: no visible binding for global variable
+  'sc_k2q19'
+combine_cahmi_datasets: no visible binding for global variable
+  'sctherapy'
+combine_cahmi_datasets: no visible binding for global variable
+  'sc_k2q22'
+combine_cahmi_datasets: no visible binding for global variable
+  'scmhealth'
+combine_cahmi_datasets: no visible binding for global variable
+  'CSHCN_1920'
+combine_cahmi_datasets: no visible binding for global variable
+  'cshcn_1718'
+combine_cahmi_datasets: no visible binding for global variable
+  'cshcn_16'
+combine_cahmi_datasets: no visible binding for global variable 'cshcn'
+combine_cahmi_datasets: no visible binding for global variable 'ace3'
+combine_cahmi_datasets: no visible binding for global variable
+  'acedivorce'
+combine_cahmi_datasets: no visible binding for global variable 'ace4'
+combine_cahmi_datasets: no visible binding for global variable
+  'acedeath'
+combine_cahmi_datasets: no visible binding for global variable 'ace5'
+combine_cahmi_datasets: no visible binding for global variable
+  'acejail'
+combine_cahmi_datasets: no visible binding for global variable 'ace6'
+combine_cahmi_datasets: no visible binding for global variable 'acedv'
+combine_cahmi_datasets: no visible binding for global variable 'ace7'
+combine_cahmi_datasets: no visible binding for global variable
+  'aceviolence'
+combine_cahmi_datasets: no visible binding for global variable 'ace8'
+combine_cahmi_datasets: no visible binding for global variable
+  'acementalill'
+combine_cahmi_datasets: no visible binding for global variable 'ace9'
+combine_cahmi_datasets: no visible binding for global variable
+  'aceaddict'
+combine_cahmi_datasets: no visible binding for global variable 'ace10'
+combine_cahmi_datasets: no visible binding for global variable
+  'aceracism'
+combine_cahmi_datasets: no visible binding for global variable 'a1_sex'
+combine_cahmi_datasets: no visible binding for global variable 'a2_sex'
+combine_cahmi_datasets: no visible binding for global variable 'a1_age'
+combine_cahmi_datasets: no visible binding for global variable 'a2_age'
+combine_cahmi_datasets: no visible binding for global variable
+  'a1_physhealth'
+combine_cahmi_datasets: no visible binding for global variable
+  'a2_physhealth'
+combine_cahmi_datasets: no visible binding for global variable
+  'a1_menthealth'
+combine_cahmi_datasets: no visible binding for global variable
+  'a2_menthealth'
+combine_cahmi_datasets: no visible binding for global variable
+  'a1_marital'
+combine_cahmi_datasets: no visible binding for global variable
+  'a2_marital'
+combine_cahmi_datasets: no visible binding for global variable
+  'sc_age_years'
+combine_cahmi_datasets: no visible binding for global variable 'k6q20'
+combine_cahmi_datasets: no visible binding for global variable
+  'care10hrs'
+combine_cahmi_datasets: no visible binding for global variable 'k2q01'
+combine_cahmi_datasets: no visible binding for global variable
+  'chhealth'
+combine_cahmi_datasets: no visible binding for global variable 'fwc'
+combine_cahmi_datasets: no visible binding for global variable
+  'log2s_fwc'
+combine_cahmi_datasets: no visible binding for global variable
+  'metro_yn'
+combine_cahmi_datasets: no visible binding for global variable 'rural'
+combine_cahmi_datasets: no visible binding for global variable
+  'famcount'
+extract_vars_cahmi: no visible global function definition for 'error'
+extract_vars_cahmi: no visible global function definition for '%>%'
+extract_vars_cahmi: no visible binding for global variable 'fwc_1920'
+extract_vars_cahmi: no visible binding for global variable 'year'
+extract_vars_cahmi: no visible binding for global variable 'fipsst'
+extract_vars_cahmi: no visible binding for global variable 'stratum'
+extract_vars_cahmi: no visible binding for global variable 'hhid'
+extract_vars_cahmi: no visible binding for global variable 'fwc'
+extract_vars_cahmi: no visible global function definition for 'all_of'
+extract_vars_cahmi: no visible global function definition for 'mutate'
+extract_vars_cahmi: no visible binding for global variable 'FWC_1718'
+extract_vars_cahmi: no visible binding for global variable 'YEAR'
+extract_vars_cahmi: no visible binding for global variable 'FIPSST'
+extract_vars_cahmi: no visible binding for global variable 'STRATUM'
+extract_vars_cahmi: no visible binding for global variable 'HHID'
+extract_vars_cahmi: no visible binding for global variable 'FWC'
+get_cahmi_xwalk: no visible global function definition for '%>%'
+get_cahmi_xwalk: no visible global function definition for 'mutate'
+get_cahmi_xwalk: no visible binding for global variable 'asex'
+get_cahmi_xwalk: no visible binding for global variable 'foodstamp'
+get_cahmi_xwalk: no visible binding for global variable 'govhealthc'
+get_cahmi_xwalk: no visible binding for global variable 'wic'
+get_cahmi_xwalk: no visible binding for global variable 'cashass'
+get_cahmi_xwalk: no visible binding for global variable 'mealfree'
+get_cahmi_xwalk: no visible binding for global variable 'medicare'
+get_cahmi_xwalk: no visible binding for global variable 'marital'
+get_cahmi_xwalk: no visible binding for global variable 'relation'
+get_cahmi_xwalk: no visible binding for global variable 'sex'
+get_cahmi_xwalk: no visible binding for global variable 'acedivorce'
+get_cahmi_xwalk: no visible binding for global variable 'acedeath'
+get_cahmi_xwalk: no visible binding for global variable 'acejail'
+get_cahmi_xwalk: no visible binding for global variable 'acedv'
+get_cahmi_xwalk: no visible binding for global variable 'aceviolence'
+get_cahmi_xwalk: no visible binding for global variable 'acementalill'
+get_cahmi_xwalk: no visible binding for global variable 'aceaddict'
+get_cahmi_xwalk: no visible binding for global variable 'aceracism'
+get_cahmi_xwalk: no visible binding for global variable 'care10hr'
+get_cahmi_xwalk: no visible binding for global variable 'orig_labels'
+recode_cahmi: no visible global function definition for '%>%'
+recode_cahmi: no visible binding for global variable 'year'
+recode_cahmi: no visible binding for global variable 'fipsst'
+recode_cahmi: no visible binding for global variable 'study'
+recode_cahmi: no visible binding for global variable 'hhid'
+recode_cahmi: no visible binding for global variable 'fwc'
+recode_cahmi: no visible binding for global variable 'rural'
+recode_cahmi: no visible binding for global variable 'famcount'
+recode_cahmi: no visible binding for global variable 'fpl_i1'
+recode_cahmi: no visible binding for global variable 'foodstamp'
+recode_cahmi: no visible binding for global variable 'govhealthc'
+recode_cahmi: no visible binding for global variable 'wic'
+recode_cahmi: no visible binding for global variable 'cashass'
+recode_cahmi: no visible binding for global variable 'mealfree'
+recode_cahmi: no visible binding for global variable 'a1_age'
+recode_cahmi: no visible binding for global variable 'a2_age'
+recode_cahmi: no visible binding for global variable 'a1_sex'
+recode_cahmi: no visible binding for global variable 'a2_sex'
+recode_cahmi: no visible binding for global variable 'a1_grade'
+recode_cahmi: no visible global function definition for 'mutate'
+recode_cahmi: no visible binding for global variable 'a2_grade'
+recode_cahmi: no visible binding for global variable 'a1_marital'
+recode_cahmi: no visible binding for global variable 'a2_marital'
+recode_cahmi: no visible binding for global variable 'a1_relation'
+recode_cahmi: no visible binding for global variable 'a2_relation'
+recode_cahmi: no visible binding for global variable 'sex'
+recode_cahmi: no visible binding for global variable 'acedivorce'
+recode_cahmi: no visible binding for global variable 'acedeath'
+recode_cahmi: no visible binding for global variable 'acejail'
+recode_cahmi: no visible binding for global variable 'acedv'
+recode_cahmi: no visible binding for global variable 'aceviolence'
+recode_cahmi: no visible binding for global variable 'acementalill'
+recode_cahmi: no visible binding for global variable 'aceaddict'
+recode_cahmi: no visible binding for global variable 'aceracism'
+recode_cahmi: no visible binding for global variable 'care10hrs'
+recode_cahmi: no visible binding for global variable 'race4'
+recode_cahmi: no visible binding for global variable 'race4_char'
+zap_attributes: no visible global function definition for '%>%'
+Undefined global functions or variables:
+  %>% AdultEduc_1920 CSHCN_1920 CashAss_1920 FIPSST FWC FWC_1718
+  FoodStamp_1920 HHID MealFree_1920 STRATUM WIC_1920 YEAR a1_age
+  a1_grade a1_marital a1_menthealth a1_physhealth a1_relation a1_sex
+  a2_age a2_grade a2_marital a2_menthealth a2_physhealth a2_relation
+  a2_sex ace10 ace3 ace4 ace5 ace6 ace7 ace8 ace9 aceaddict acedeath
+  acedivorce acedv acejail acementalill aceracism aceviolence
+  adulteduc_16 adulteduc_1718 all_of asex bind_rows care10hr care10hrs
+  cashass cashass_16 cashass_1718 chhealth cshcn cshcn_16 cshcn_1718
+  error famcount fipsst foodcash foodstamp foodstamp_16 foodstamp_1718
+  fpl fpl_i1 fwc fwc_1920 govhealthc hhid k12q12 k2q01 k6q20 left_join
+  log2s_fwc marital mealfree mealfree_16 mealfree_1718 medicare
+  metro_yn mutate orig_labels race4 race4_16 race4_1718 race4_1920
+  race4_char relation rural sc_age_years sc_hispanic_r sc_k2q10
+  sc_k2q13 sc_k2q16 sc_k2q19 sc_k2q22 scfunc scmhealth scrxmeds scserve
+  sctherapy sex sex_16 sex_1718 sex_1920 stratum study wic wic_16
+  wic_1718 year
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd line widths ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... WARNING
+Undocumented code objects:
+  'cahmi_2016' 'cahmi_2017_2018' 'cahmi_2019_2020'
+  'combine_cahmi_datasets' 'extract_vars_cahmi' 'get_cahmi_xwalk'
+  'get_cpi99' 'recode_cahmi' 'vars_df' 'zap_attributes'
+All user-level objects in a package should have documentation entries.
+See chapter 'Writing R documentation files' in the 'Writing R
+Extensions' manual.
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking R/sysdata.rda ...

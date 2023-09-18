@@ -1,0 +1,26 @@
+{
+    "id": "7EC5C2BA",
+    "path": "C:/Users/marcu/Dropbox/GitKraken/white-rhino/repositories/Kidsights_NSCH_ACS/KidsightsGovtDatasets/R/get_cpi99.R",
+    "project_path": "R/get_cpi99.R",
+    "type": "r_source",
+    "hash": "1263542310",
+    "contents": "",
+    "dirty": false,
+    "created": 1695046708348.0,
+    "source_on_save": false,
+    "relative_order": 6,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "50,0",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1695046736,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1695046736983,
+    "read_only": false,
+    "read_only_alternatives": []
+}
